@@ -2,6 +2,7 @@
 
 import { useEffect, useState, use } from 'react';
 import { GrainOverlay } from '@/components/grain-overlay';
+import { CinematicBackground } from '@/components/cinematic-background';
 import { phrases, type Phrase } from '@/app/lib/phrases';
 
 export default function Home(props: {
@@ -30,7 +31,8 @@ export default function Home(props: {
   }, []);
 
   return (
-    <main className="fixed inset-0 bg-[#0A0A0A] text-[#F4F4F4] flex flex-col items-center justify-center p-6 sm:p-8 selection:bg-accent/40 overflow-hidden touch-none">
+    <main className="fixed inset-0 bg-transparent text-[#F4F4F4] flex flex-col items-center justify-center p-6 sm:p-8 selection:bg-accent/40 overflow-hidden touch-none">
+      <CinematicBackground />
       <GrainOverlay />
       
       {/* Branding Header */}

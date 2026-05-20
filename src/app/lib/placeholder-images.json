@@ -1,0 +1,16 @@
+{
+  "placeholderImages": [
+    {
+      "id": "coffee-artifact-1",
+      "description": "Minimalist coffee cup against a stone background",
+      "imageUrl": "https://picsum.photos/seed/kofi1/1200/800",
+      "imageHint": "minimalist coffee"
+    },
+    {
+      "id": "coffee-artifact-2",
+      "description": "Modern African textile texture",
+      "imageUrl": "https://picsum.photos/seed/kofi2/1200/800",
+      "imageHint": "african pattern"
+    }
+  ]
+}

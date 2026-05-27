@@ -64,13 +64,13 @@ export default function Home(props: {
             <div className="flex flex-col sm:flex-row gap-4">
               <button
                 onClick={() => handleModeSelect('coffee')}
-                className="text-[10px] uppercase tracking-[0.5em] font-bold border border-foreground/10 px-8 py-4 hover:border-accent/60 hover:text-accent transition-colors duration-300"
+                className="text-[10px] uppercase tracking-[0.5em] font-bold border border-accent text-accent px-8 py-4 hover:bg-accent/10 active:bg-accent active:text-[#0A0A0A] transition-colors duration-150"
               >
                 Coffee Message
               </button>
               <button
                 onClick={() => handleModeSelect('compliment')}
-                className="text-[10px] uppercase tracking-[0.5em] font-bold border border-foreground/10 px-8 py-4 hover:border-accent/60 hover:text-accent transition-colors duration-300"
+                className="text-[10px] uppercase tracking-[0.5em] font-bold border border-accent text-accent px-8 py-4 hover:bg-accent/10 active:bg-accent active:text-[#0A0A0A] transition-colors duration-150"
               >
                 Compliment
               </button>

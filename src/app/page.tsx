@@ -4,6 +4,7 @@ import { useEffect, useState, use } from 'react';
 import { GrainOverlay } from '@/components/grain-overlay';
 import { CinematicBackground } from '@/components/cinematic-background';
 import { phrases, compliments, type Phrase, type Compliment } from '@/app/lib/phrases';
+import { ShareButtons } from '@/components/share-buttons';
 
 type Mode = 'coffee' | 'compliment' | null;
 
@@ -100,6 +101,7 @@ export default function Home(props: {
                    {phrase.english}
                  </p>
                  <div className="h-[1px] w-8 bg-accent/20 mx-auto" />
+                 <ShareButtons text={phrase.english} />
                </div>
             </div>
           </div>
@@ -110,6 +112,7 @@ export default function Home(props: {
                  {compliment.text}
                </h2>
                <div className="h-[1px] w-8 bg-accent/20 mx-auto" />
+               <ShareButtons text={compliment.text} />
             </div>
           </div>
         ) : null}

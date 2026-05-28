@@ -9,10 +9,15 @@ interface ShareButtonsProps {
 export function ShareButtons({ text }: ShareButtonsProps) {
   const [copiedFor, setCopiedFor] = useState<'facebook' | 'instagram' | null>(null);
 
-  const shareText = `${text} — Kentucky Coffee`;
+  const shareText = `${text} — Kentucky Coffee #GRWM`;
 
   const xUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}`;
   const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(shareText)}`;
+
+  const platformUrl: Record<'facebook' | 'instagram', string> = {
+    facebook: 'https://www.facebook.com',
+    instagram: 'https://www.instagram.com',
+  };
 
   const handleCopy = async (platform: 'facebook' | 'instagram') => {
     try {
@@ -20,6 +25,7 @@ export function ShareButtons({ text }: ShareButtonsProps) {
     } catch {
       // clipboard unavailable — silent fail
     }
+    window.open(platformUrl[platform], '_blank', 'noopener,noreferrer');
     setCopiedFor(platform);
     setTimeout(() => setCopiedFor(null), 2500);
   };

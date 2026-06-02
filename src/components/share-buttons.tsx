@@ -70,7 +70,7 @@ export function ShareButtons({ text, setswana }: ShareButtonsProps) {
   const btnClass = "flex items-center gap-2 text-accent opacity-80 hover:opacity-100 transition-opacity duration-200 disabled:opacity-40 disabled:cursor-not-allowed";
 
   return (
-    <div className="flex items-center gap-6">
+    <div className="flex items-center justify-center gap-6">
       <button onClick={handleShare} disabled={isGenerating} aria-label="Share" className={btnClass}>
         <span className="text-[10px] uppercase tracking-[0.5em] font-bold">Share</span>
         <Share2 size={18} />

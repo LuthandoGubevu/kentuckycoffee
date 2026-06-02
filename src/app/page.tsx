@@ -101,7 +101,7 @@ export default function Home(props: {
                    {phrase.english}
                  </p>
                  <div className="h-[1px] w-8 bg-accent/20 mx-auto" />
-                 <ShareButtons text={phrase.english} />
+                 <ShareButtons text={phrase.english} setswana={phrase.setswana} />
                </div>
             </div>
           </div>

@@ -92,6 +92,7 @@ export default function Home(props: {
         ) : phrase ? (
           <div className="w-full flex flex-col items-center space-y-16 animate-in fade-in zoom-in-95 duration-1000">
             <div className="space-y-10 text-center px-4 w-full">
+               <img src="/phrase-image.png" alt="" className="mx-auto max-w-[96px] opacity-70 pointer-events-none" />
                <h2 className="text-4xl sm:text-5xl md:text-6xl font-light tracking-tight leading-[1.2] font-body max-w-2xl mx-auto whitespace-pre-line lowercase">
                  {phrase.setswana}
                </h2>
@@ -109,6 +110,7 @@ export default function Home(props: {
         ) : compliment ? (
           <div className="w-full flex flex-col items-center space-y-16 animate-in fade-in zoom-in-95 duration-1000">
             <div className="space-y-10 text-center px-4 w-full">
+               <img src="/phrase-image.png" alt="" className="mx-auto max-w-[96px] opacity-70 pointer-events-none" />
                <h2 className="text-4xl sm:text-5xl md:text-6xl font-light tracking-tight leading-[1.2] font-body max-w-2xl mx-auto lowercase">
                  {compliment.text}
                </h2>

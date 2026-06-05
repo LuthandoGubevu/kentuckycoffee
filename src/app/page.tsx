@@ -102,6 +102,7 @@ export default function Home(props: {
                  </p>
                  <div className="h-[1px] w-8 bg-accent/20 mx-auto" />
                  <ShareButtons text={phrase.english} setswana={phrase.setswana} />
+                 <img src="/reveal.gif" alt="" className="mx-auto mt-2 max-w-[200px] opacity-90 pointer-events-none" />
                </div>
             </div>
           </div>
@@ -113,6 +114,7 @@ export default function Home(props: {
                </h2>
                <div className="h-[1px] w-8 bg-accent/20 mx-auto" />
                <ShareButtons text={compliment.text} />
+               <img src="/reveal.gif" alt="" className="mx-auto mt-2 max-w-[200px] opacity-90 pointer-events-none" />
             </div>
           </div>
         ) : null}
